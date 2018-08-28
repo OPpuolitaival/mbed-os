@@ -1,11 +1,5 @@
-### 1. Name
-test_cmdline
+## Icetea test cases
 
-### 2. Description
-Base test case to ensure the device and Icetea are installed properly
-
-### 3. Command
-`mbed test -m <platform> -t <toolchain> --icetea -n test_cmdline`
-
-### 4. Requirements
-1x Mbed Enabled platform
+**Name** | **Description** | **Requirements** 
+------------ | ------------- | -------------
+`test_cmdline` | Base test case to ensure Icetea is installed properly and a device is connected.| 1x Mbed Enabled platform 
