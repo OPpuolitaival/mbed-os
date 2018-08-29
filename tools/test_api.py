@@ -2135,6 +2135,12 @@ def find_tests(base_dir, target_name, toolchain_name, icetea, greentea, app_conf
             for subdir in os.listdir(directory):
                 d = join(directory, subdir)
                 if not isdir(d):
+                    continue
+                if 'device' == subdir:
+                    for test_dir in os.listdir(d):
+                        test_dir_path = join(d, test_dir)
+                        test_name = test_path_to_name(test_dir_path, base_dir)
+                        tests[(test_name, directory, subdir, test_dir)] = [test_dir_path]
 
     # Apply common directories
     for pred, path in commons:
