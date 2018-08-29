@@ -65,9 +65,10 @@ Example of separate macros:
 			"macro_name": "WIFI_PASSWORD"
         },
         "wifi-security": {
-            "help": "WiFi Security, values from nsapi_security from features/netsocket/nsapi_types.h"
-            "value": "NSAPI_SECURITY_WPA_WPA2"
+            "help": "WiFi Security, values from nsapi_security from features/netsocket/nsapi_types.h",
+            "value": "NSAPI_SECURITY_WPA_WPA2",
             "macro_name": "WIFI_SECURITY"
+	}
 ```
 
 Example of modifying the connect statement
